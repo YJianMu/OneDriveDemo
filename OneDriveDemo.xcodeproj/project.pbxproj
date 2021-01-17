@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73F9232B34B93D41ED91DD7E /* Pods_OneDriveDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A07D58C7E31A8E2CD1BA41 /* Pods_OneDriveDemo.framework */; };
 		A2AD487925B45C5F0042C84B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD487825B45C5F0042C84B /* AppDelegate.m */; };
 		A2AD487C25B45C5F0042C84B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD487B25B45C5F0042C84B /* SceneDelegate.m */; };
 		A2AD487F25B45C5F0042C84B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD487E25B45C5F0042C84B /* ViewController.m */; };
@@ -14,9 +15,13 @@
 		A2AD488425B45C600042C84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AD488325B45C600042C84B /* Assets.xcassets */; };
 		A2AD488725B45C600042C84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AD488525B45C600042C84B /* LaunchScreen.storyboard */; };
 		A2AD488A25B45C600042C84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD488925B45C600042C84B /* main.m */; };
+		A2AD489225B45D470042C84B /* FileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD489125B45D470042C84B /* FileTableViewController.m */; };
+		A2AD489525B45D520042C84B /* GraphManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD489425B45D520042C84B /* GraphManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C27CD3F4B4312EC4CC3C132 /* Pods-OneDriveDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneDriveDemo.debug.xcconfig"; path = "Target Support Files/Pods-OneDriveDemo/Pods-OneDriveDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		24A07D58C7E31A8E2CD1BA41 /* Pods_OneDriveDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneDriveDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AD487425B45C5F0042C84B /* OneDriveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneDriveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AD487725B45C5F0042C84B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2AD487825B45C5F0042C84B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +34,12 @@
 		A2AD488625B45C600042C84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2AD488825B45C600042C84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2AD488925B45C600042C84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2AD489025B45D470042C84B /* FileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileTableViewController.h; sourceTree = "<group>"; };
+		A2AD489125B45D470042C84B /* FileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileTableViewController.m; sourceTree = "<group>"; };
+		A2AD489325B45D520042C84B /* GraphManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphManager.h; sourceTree = "<group>"; };
+		A2AD489425B45D520042C84B /* GraphManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphManager.m; sourceTree = "<group>"; };
+		A2AD489625B467FC0042C84B /* OneDriveDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneDriveDemo.entitlements; sourceTree = "<group>"; };
+		CF3FA04D27DCDD73BBCB28B4 /* Pods-OneDriveDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneDriveDemo.release.xcconfig"; path = "Target Support Files/Pods-OneDriveDemo/Pods-OneDriveDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F9232B34B93D41ED91DD7E /* Pods_OneDriveDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39E4A8096E695A71A32E9970 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C27CD3F4B4312EC4CC3C132 /* Pods-OneDriveDemo.debug.xcconfig */,
+				CF3FA04D27DCDD73BBCB28B4 /* Pods-OneDriveDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A2AD486B25B45C5F0042C84B = {
 			isa = PBXGroup;
 			children = (
 				A2AD487625B45C5F0042C84B /* OneDriveDemo */,
 				A2AD487525B45C5F0042C84B /* Products */,
+				39E4A8096E695A71A32E9970 /* Pods */,
+				C19FDAAFC6FB6BEB6A84A9FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +84,7 @@
 		A2AD487625B45C5F0042C84B /* OneDriveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A2AD489625B467FC0042C84B /* OneDriveDemo.entitlements */,
 				A2AD487725B45C5F0042C84B /* AppDelegate.h */,
 				A2AD487825B45C5F0042C84B /* AppDelegate.m */,
 				A2AD487A25B45C5F0042C84B /* SceneDelegate.h */,
@@ -68,12 +92,24 @@
 				A2AD487D25B45C5F0042C84B /* ViewController.h */,
 				A2AD487E25B45C5F0042C84B /* ViewController.m */,
 				A2AD488025B45C5F0042C84B /* Main.storyboard */,
+				A2AD489325B45D520042C84B /* GraphManager.h */,
+				A2AD489425B45D520042C84B /* GraphManager.m */,
+				A2AD489025B45D470042C84B /* FileTableViewController.h */,
+				A2AD489125B45D470042C84B /* FileTableViewController.m */,
 				A2AD488325B45C600042C84B /* Assets.xcassets */,
 				A2AD488525B45C600042C84B /* LaunchScreen.storyboard */,
 				A2AD488825B45C600042C84B /* Info.plist */,
 				A2AD488925B45C600042C84B /* main.m */,
 			);
 			path = OneDriveDemo;
+			sourceTree = "<group>";
+		};
+		C19FDAAFC6FB6BEB6A84A9FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24A07D58C7E31A8E2CD1BA41 /* Pods_OneDriveDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2AD488D25B45C600042C84B /* Build configuration list for PBXNativeTarget "OneDriveDemo" */;
 			buildPhases = (
+				BCC842B8644FDA83113C2567 /* [CP] Check Pods Manifest.lock */,
 				A2AD487025B45C5F0042C84B /* Sources */,
 				A2AD487125B45C5F0042C84B /* Frameworks */,
 				A2AD487225B45C5F0042C84B /* Resources */,
+				249FF5001E6A09DD2894F879 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +179,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		249FF5001E6A09DD2894F879 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneDriveDemo/Pods-OneDriveDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneDriveDemo/Pods-OneDriveDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneDriveDemo/Pods-OneDriveDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC842B8644FDA83113C2567 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneDriveDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2AD487025B45C5F0042C84B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,6 +228,8 @@
 			files = (
 				A2AD487F25B45C5F0042C84B /* ViewController.m in Sources */,
 				A2AD487925B45C5F0042C84B /* AppDelegate.m in Sources */,
+				A2AD489525B45D520042C84B /* GraphManager.m in Sources */,
+				A2AD489225B45D470042C84B /* FileTableViewController.m in Sources */,
 				A2AD488A25B45C600042C84B /* main.m in Sources */,
 				A2AD487C25B45C5F0042C84B /* SceneDelegate.m in Sources */,
 			);
@@ -287,8 +369,10 @@
 		};
 		A2AD488E25B45C600042C84B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C27CD3F4B4312EC4CC3C132 /* Pods-OneDriveDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OneDriveDemo/OneDriveDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OneDriveDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,8 +387,10 @@
 		};
 		A2AD488F25B45C600042C84B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF3FA04D27DCDD73BBCB28B4 /* Pods-OneDriveDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OneDriveDemo/OneDriveDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OneDriveDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
